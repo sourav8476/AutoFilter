@@ -51,26 +51,26 @@ STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/how_to_download_moviezone/5'
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 PREFIX = environ.get("PREFIX", "/")
 
-CHAT_GROUP = int(environ.get("CHAT_GROUP", "-1001953724858"))
+CHAT_GROUP = int(environ.get("CHAT_GROUP", "-1002156611690"))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6497757690 5115691197').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001619818259').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6402721511 7023006442').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002159424377').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '-1002245466708').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '6497757690').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '7023006442').split()]
 auth_channel = environ.get('AUTH_CHANNEL', '') #Channel / Group Id for force sub ( make sure bot is admin )
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001566837125') # support group id ( make sure bot is admin )
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001905367057') # request channel id ( make sure bot is admin )
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002156611690') # support group id ( make sure bot is admin )
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002221601830') # request channel id ( make sure bot is admin )
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False)) # True if you want no results messages in Log Channel
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jhnbsomers0uh14:rVz5pWHzELN6aJWU@cluster0.sloz4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Lucy")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -91,18 +91,18 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 # Referal Settings
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1 week')
-OWNER_USERNAME = environ.get('OWNER_USERNAME', 'sewxiy') # owner username without @
+OWNER_USERNAME = environ.get('OWNER_USERNAME', 'Sourav00876') # owner username without @
 
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001868871195')) #Log channel id ( make sure bot is admin )
-DUMP_CHNL = int(environ.get('DUMP_CHNL', '-1002067012611'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002216660895')) #Log channel id ( make sure bot is admin )
+DUMP_CHNL = int(environ.get('DUMP_CHNL', '-1002218724992'))
 
 # Verify
 VERIFY = bool(environ.get('VERIFY', True)) # Verification On ( True ) / Off ( False )
-HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/How_to_Download_7x/26') # How to open tutorial link for verification
+HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/how_to_download_moviezone/5') # How to open tutorial link for verification
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shareus.io')
-SHORTLINK_API = environ.get('SHORTLINK_API', '1Jh0re6olVUHnr3eEyFG7NZX7RF3')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'modijiurl.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '29b557074aa857e56ca7fd6ad2e42ef2788e8443')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
